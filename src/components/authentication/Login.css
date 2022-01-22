@@ -1,0 +1,171 @@
+.login__container {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: auto;
+}
+
+.logo__auth {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo__auth img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80vw;
+  margin: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.login__form__container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login__form__container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px;
+}
+
+.login__form__container form input,
+.login__form__container form button {
+  width: 100%;
+  padding: 18px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgba(109, 105, 105, 0.815);
+}
+
+.login__form__container form input:hover,
+.login__form__container form button:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.login__form__container form input::-webkit-input-placeholder,
+.login__form__container form button {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.login__form__container form input:-ms-input-placeholder,
+.login__form__container form button {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.login__form__container form input::-ms-input-placeholder,
+.login__form__container form button {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.login__form__container form input::placeholder,
+.login__form__container form button {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.login__form__container form input::-webkit-input-placeholder:active {
+  background-color: white;
+  border-color: black;
+  color: white;
+}
+
+.login__form__container form input:-ms-input-placeholder:active {
+  background-color: white;
+  border-color: black;
+  color: white;
+}
+
+.login__form__container form input::-ms-input-placeholder:active {
+  background-color: white;
+  border-color: black;
+  color: white;
+}
+
+.login__form__container form input::placeholder:active {
+  background-color: white;
+  border-color: black;
+  color: white;
+}
+
+.login__form__container form button {
+  cursor: pointer;
+}
+
+.google__auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  color: black;
+  border: 0.5px solid black;
+  padding: 18px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.google__auth button {
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+.google__auth:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+/*# sourceMappingURL=Login.css.map */

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Login from "./components/authentication/Login";
+import SignUp from "./components/authentication/SignUp";
+import { useStateValue } from "./StateProvider";
+import Dashboard from "./components/dashboard/Dashboard";
+import Profile from "./components/dashboard/Profile/Profile";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+  const history = useHistory();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Router>
+        <div className="app">
+          <Switch>
+            <>
+              <Route path="/" exact component={Login} />
+              <Route path="/signup" component={SignUp} />
+              <Route path="/dashboard" component={Dashboard} />
+              <Route path="/setupProfile" component={Profile} />
+            </>
+          </Switch>
+        </div>
+      </Router>
+    </BrowserRouter>
   );
 }
 
